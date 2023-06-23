@@ -1,0 +1,402 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.principal {
+    height: 100%;
+    width: 100%;
+}
+
+.ini {
+    display: flex;
+    height: 100%;
+
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+/*BAnner de navegacion*/
+.banner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: white;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul a {
+    list-style: none;
+    display: inline-grid;
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+nav ul a::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+nav ul a:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+
+/*Redes sociales*/
+.redes {
+    border-right: 2px solid rgba(255, 255, 255, 0.56);
+    height: 649px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.red {
+    padding: 5%;
+    fill: black !important;
+    color: black;
+
+
+}
+
+.red img:hover {
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+
+
+
+.Titulo {
+
+    height: 649px;
+    width: 100%;
+
+}
+
+.extension {
+    background-color: blue;
+    height: 649px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.ext {
+    padding: 0 0 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 120px;
+    border-radius: 10% 0 0 10%;
+    border: 2px solid black;
+}
+
+.ext:hover {
+    width: 480px;
+    transition: 0.5s;
+}
+
+/*Efecto del button
+.btn {
+    width: 8.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background-color: #001341;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button::after {
+    content: "";
+    background-color: #E4F2FE;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover::after {
+    transform: skewX(-45deg)scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+*/
+.titulo {
+    background-color: black;
+}
+
+.titulo img {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 380px;
+}
+
+/*Efecto del letras*/
+.animacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.letra {
+
+    font-size: 25px;
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: none;
+    color: rgb(255, 255, 255);
+}
+
+.letra:hover {
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(18, 6%, 65%), hsl (56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*Nosotros*/
+.nosotros {
+    margin: 4%;
+    display: flex;
+}
+
+.info {
+    width: 100%;
+    background-image: repeating-linear-gradient(to right rgba(black, white));
+}
+
+/*efecto de diapositivas*/
+.diapo {
+    display: flex;
+    box-sizing: border-box;
+
+
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.card {
+
+    margin-left: 5px;
+    height: 500px;
+    background-color: black;
+    flex: 1;
+    transition: .3s all ease;
+
+}
+
+.card:hover {
+    flex: 45;
+    background-color: rgb(207, 207, 207);
+}
+
+/*Efecto cartas*/
+.seccion2 {
+    padding: 0;
+    margin: 5% 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+
+
+
+}
+
+.container .card1 {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05), -5px 5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container .card1 .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .card1 .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.container .card1 .box .contenido {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.container .card1 .box .contenido h1 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.container .card1 .box .contenido h2 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.4s;
+
+}
+
+.container .card1 .box .contenido p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.container .card1 .box .contenido a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card1:hover .box {
+    transform: translateY(-50px);
+    transition: 0.5s;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #b95ce4, #e91e06);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.container .card1:hover .contenido h1 {
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.container .card1:hover .contenido h2 {
+    color: rgb(255, 255, 255)
+}
+
+.container .card1:hover .contenido p {
+    color: rgb(255, 255, 255)
+}
+
+.container .card1:hover .contenido a {
+    background: #ff568f;
+}
