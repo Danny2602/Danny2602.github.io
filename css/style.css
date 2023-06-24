@@ -25,6 +25,7 @@
 img {
     width: 30px;
     height: 30px;
+
 }
 
 /*BAnner de navegacion*/
@@ -41,11 +42,13 @@ img {
 .barra {
     display: flex;
     align-items: center;
+    font-family: monospace;
     justify-content: center;
+
 }
 
 nav {
-    background: white;
+    background-image: linear-gradient(to top right, rgba(4, 12, 156, 0.712), rgba(0, 123, 172, 0.692), rgba(45, 149, 218, 0.562), rgba(255, 255, 255, 0.671));
     height: 40px;
     border-radius: 50px;
     padding: 10px;
@@ -53,6 +56,8 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: 0.7s;
+
 }
 
 nav ul a {
@@ -62,12 +67,13 @@ nav ul a {
     margin: 10px;
     font-size: 15px;
     font-weight: 200;
-    color: black;
+    color: #fff;
     cursor: pointer;
     position: relative;
     z-index: 2;
     transition: color 0.3s;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 nav ul a::after {
@@ -91,6 +97,7 @@ nav ul a:hover {
 nav ul a:hover::after {
     top: 50%;
     opacity: 1;
+    transition: 0.4s;
 }
 
 /*Redes sociales*/
@@ -111,7 +118,6 @@ nav ul a:hover::after {
     fill: black !important;
     color: black;
 
-
 }
 
 .red img:hover {
@@ -123,14 +129,146 @@ nav ul a:hover::after {
 
 
 .Titulo {
-
     height: 649px;
     width: 100%;
+    color: #fff;
+    font-family: monospace;
+    align-items: center;
 
 }
 
+.Titulo h3 {
+    font-size: 25px;
+    padding: 30px 60px;
+}
+
+.Titulo h1 {
+    font-size: 60px;
+    padding: 20px 60px;
+}
+
+.Titulo p {
+    font-size: 16px;
+    padding: 10px 60px;
+}
+
+.frame {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+button {
+    padding: 30px;
+}
+
+.btn1 {
+    width: 170px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 15px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+    outline: none;
+}
+
+.Acceder {
+    background: linear-gradient(0deg, rgb(11, 109, 201) 0%, rgb(0, 54, 134) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.Acceder span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Acceder:before,
+.Acceder:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgb(6, 2, 251);
+    box-shadow:
+        -7px -7px 20px 0px rgb(0, 0, 0),
+        -4px -4px 5px 0px rgba(0, 0, 0, 0.9),
+        7px 7px 20px 0px rgba(255, 255, 255, 0.932),
+        4px 4px 5px 0px rgba(255, 255, 255, 0.89);
+    transition: all 0.3s ease;
+}
+
+.Acceder:before {
+    height: 0%;
+    width: 2px;
+}
+
+.Acceder:after {
+    width: 0%;
+    height: 2px;
+}
+
+.Acceder:hover {
+    color: rgb(4, 43, 172);
+    background: white;
+
+}
+
+.Acceder:hover:before {
+    height: 100%;
+}
+
+.Acceder:hover:after {
+    width: 100%;
+}
+
+.Acceder span:before,
+.Acceder span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgb(38, 114, 255);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.Acceder span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.Acceder span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.Acceder span:hover:before {
+    height: 100%;
+}
+
+.Acceder span:hover:after {
+    width: 100%;
+}
+
+
+
 .extension {
-    background-color: blue;
     height: 649px;
     width: 100%;
     display: flex;
@@ -138,21 +276,67 @@ nav ul a:hover::after {
     background-position: center;
     justify-content: center;
     align-items: end;
+    box-sizing: border-box;
 }
 
 .ext {
-    padding: 0 0 10px;
     box-sizing: border-box;
     flex-wrap: wrap;
-    width: 450px;
+    width: 60%;
     height: 120px;
-    border-radius: 10% 0 0 10%;
-    border: 2px solid black;
+    border-radius: 16px 0px 0px 16px;
+    margin-top: 25px;
+    align-items: center;
+    background-position: center;
+    text-align: center;
+    display: flex;
 }
 
+.ext button {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 0px 0px 16px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    color: transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+
 .ext:hover {
-    width: 480px;
-    transition: 0.5s;
+    border-radius: 16px 0px 0px 16px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.ext button:hover {
+    color: white;
+    border-radius: 16px 0px 0px 16px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+}
+
+/**/
+.letra {
+    background-size: cover;
+    font-family: 'Cabin Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    font-weight: bold;
+    max-width: 250px;
+    height: auto;
 }
 
 /*Efecto del button
