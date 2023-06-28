@@ -5,18 +5,14 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     align-items: center;
-
+    height: 100vh;
     background-size: cover;
 }
 
 img {
 
-    height: 100vh;
     width: 100vh;
     object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 * {
@@ -33,7 +29,7 @@ section {
 }
 
 .todo {
-
+    height: 100vh;
     padding: 10%;
     display: flex;
     text-align: center;
@@ -53,7 +49,7 @@ section {
     backdrop-filter: blur(6px);
     align-items: center;
     justify-content: center;
-    width: 850px;
+    width: 100vh;
     height: 410px;
     border: 2px solid rgba(255, 255, 255, 0.56);
     border-radius: 20px 0 0 20px;
@@ -73,8 +69,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    width: 90%;
-    max-width: 400px;
+    width: 90vh;
+    max-width: 440px;
     height: 150px;
     margin: auto;
     position: relative;
@@ -181,7 +177,7 @@ section {
 
 
     position: relative;
-    width: 700px;
+    width: 76vh;
     height: 410px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.56);
@@ -199,7 +195,7 @@ section {
 
 
     position: relative;
-    width: 50%;
+    width: 100vh;
     height: 410px;
     background: transparent;
     border-radius: 0 20px 20px 0;

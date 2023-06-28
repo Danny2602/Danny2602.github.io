@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
 
+
 :root {
     scroll-behavior: smooth;
     --background-dark: #2d3548;
@@ -19,7 +20,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 
 }
 
@@ -30,7 +31,9 @@
 
 .ini {
     display: flex;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+    box-sizing: content-box;
 
 }
 
@@ -47,11 +50,13 @@ img {
     justify-content: space-between;
 
     width: 100%;
-    height: 50px;
+    height: 10%;
     padding: 0 10px 0 10px;
 }
 
 .barra {
+
+    height: 10vh;
     display: flex;
     align-items: center;
     font-family: monospace;
@@ -62,7 +67,7 @@ img {
 nav {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 10, 129, 1) 21%, rgba(1, 27, 231, 1) 35%, rgba(2, 162, 222, 1) 57%, rgba(0, 212, 255, 1) 82%, rgba(9, 78, 121, 1) 100%);
-    height: 40px;
+    height: 2vh;
     border-radius: 50px;
     padding: 10px;
     box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.4);
@@ -74,12 +79,13 @@ nav {
 }
 
 nav ul a {
+
     list-style: none;
     display: inline-grid;
-    padding: 5px 15px;
+    padding: 0.5vh 5vh;
     margin: 10px;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 2vh;
+    font-weight: 200vh;
     color: #fff;
     cursor: pointer;
     position: relative;
@@ -91,7 +97,7 @@ nav ul a {
 
 nav ul a::after {
     content: "";
-    background: black;
+    background: rgb(10, 14, 218);
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -116,8 +122,8 @@ nav ul a:hover::after {
 /*Redes sociales*/
 .redes {
     border-right: 2px solid rgba(255, 255, 255, 0.56);
-    height: 649px;
-    width: 250px;
+    height: 90vh;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +148,8 @@ nav ul a:hover::after {
 
 
 .Titulo {
-    height: 100vh;
+
+    height: 90vh;
     width: 100%;
     color: #fff;
     font-family: monospace;
@@ -166,18 +173,16 @@ nav ul a:hover::after {
 }
 
 .frame {
-    width: 90%;
+    width: 40vh;
     margin: 30px auto;
     text-align: center;
 }
 
-button {
-    padding: 30px;
-}
+
 
 .btn1 {
-    width: 170px;
-    height: 40px;
+    width: 30vh;
+    height: 6vh;
     color: #fff;
     border-radius: 5px;
     font-family: monospace;
@@ -196,16 +201,15 @@ button {
 .Acceder {
     background: rgb(2, 0, 36);
     background: linear-gradient(114deg, rgba(2, 0, 36, 1) 28%, rgba(8, 25, 125, 1) 56%, rgba(8, 42, 129, 1) 64%, rgba(1, 27, 231, 1) 85%, rgba(2, 162, 222, 1) 100%, rgba(9, 78, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    line-height: 42px;
-    padding: 0;
+    line-height: 6vh;
+    padding: 0vh;
     border: none;
 }
 
 .Acceder span {
     position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
+
 }
 
 .Acceder:before,
@@ -283,39 +287,44 @@ button {
 
 
 .extension {
-    height: 649px;
+
+    height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-position: center;
-    justify-content: center;
     align-items: end;
-    box-sizing: border-box;
+    justify-self: end;
+    justify-content: center;
+
+
+
 
 }
 
 .ext {
+
     box-sizing: border-box;
     flex-wrap: wrap;
     width: 60%;
     height: 120px;
     border-radius: 16px 0px 0px 16px;
     margin-top: 25px;
+    justify-content: end;
     align-items: center;
     background-position: center;
     text-align: center;
-    display: flex;
+
     transition: 0.3s;
 }
 
 .ext button {
     width: 100%;
-    height: 100%;
+    height: 120px;
     border-radius: 16px 0px 0px 16px;
     background-color: transparent;
     border: none;
     align-items: center;
-    background-position: center;
+
     text-align: center;
     justify-content: center;
     color: transparent;
@@ -328,6 +337,7 @@ button {
 .ext:hover {
     border-radius: 16px 0px 0px 16px;
     width: 70%;
+    height: 120px;
     transition: 0.3s;
 }
 
@@ -335,9 +345,9 @@ button {
     color: white;
     border-radius: 16px 0px 0px 16px;
     width: 100%;
-    height: 100%;
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.705);
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 /**/
@@ -442,6 +452,7 @@ button:hover::after {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+
 }
 
 .hero-section {
@@ -498,7 +509,7 @@ button:hover::after {
     right: 0;
     top: 0;
     transform-origin: center;
-    trsnsform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
     transition:
         filter 200ms linear,
         transform 200ms linear;
@@ -651,7 +662,13 @@ button:hover::after {
 
 /*Nosotros*/
 #nosotros {
-    padding: 20px;
+
+    height: 100vh;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    padding: 40px;
 }
 
 
@@ -734,4 +751,152 @@ button:hover::after {
     flex: 45;
     background-color: rgb(207, 207, 207);
 
+}
+
+/*Prodcutos*/
+#productos {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+.mantener {
+    padding-left: 50px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.venta {
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.outer {
+    position: relative;
+    background: #fff;
+    height: 350px;
+    width: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.pro {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    z-index: 0;
+    animation-delay: 0.5s;
+}
+
+.content {
+    animation-delay: 0.3s;
+    position: absolute;
+    left: 20px;
+    z-index: 3
+}
+
+.content h1 {
+    color: #111;
+}
+
+.content p {
+    width: 280px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #aaa;
+    margin: 20px 0;
+
+}
+
+.bg {
+    display: inline-block;
+    color: #fff;
+    background: cornflowerblue;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: .7em;
+}
+
+.button {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+
+
+
+}
+
+.button a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    font-size: 11px;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    font-weight: bold;
+
+
+}
+
+.button a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 0%;
+    background: #111;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+    transform: skew(-25deg);
+    transform-origin: right;
+}
+
+.button a:hover:after {
+    width: 150%;
+    left: -10px;
+    transform-origin: left;
+
+}
+
+.button a:hover {
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+
+.button a:nth-of-type(1) {
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+}
+
+.button a:nth-of-type(2) {
+    border-radius: 0px 50px 50px 0;
+}
+
+.cart-icon {
+    padding-right: 8px;
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
