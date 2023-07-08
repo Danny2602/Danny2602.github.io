@@ -106,7 +106,7 @@ body{
     box-shadow: 0.1em 0.1em 0.6em 0.2em #07ace3;
     right: 0.3em;
     transition: all 0.3s;
-    color: transparent;
+    
   }
   
   .cssbuttons-io-button:hover .icon {
