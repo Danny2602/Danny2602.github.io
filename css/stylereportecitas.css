@@ -1,10 +1,12 @@
 html {
     background-color: darkgrey;
-  }
-  body {
+}
+
+body {
     font-family: Roboto;
-  }
-  .page {
+}
+
+.page {
     background-color: white;
     height: 26.7cm;
     width: 21cm;
@@ -12,14 +14,14 @@ html {
     padding: 24px;
     display: flex;
     flex-direction: column;
-  }
-  
-  
-  .container th h1 {
+}
+
+
+.container th h1 {
     font-weight: bold;
     font-size: 1em;
-text-align: left;
-color: #ffffff;
+    text-align: left;
+    color: #ffffff;
 }
 
 .container td {
@@ -33,14 +35,15 @@ color: #ffffff;
     overflow: hidden;
     width: 80%;
     margin: 0 auto;
-display: table;
-padding: 0 0 8em 0;
+    display: table;
+    padding: 0 0 8em 0;
 }
 
-.container td, .container th {
+.container td,
+.container th {
     padding-bottom: 2%;
     padding-top: 2%;
-padding-left:2%;  
+    padding-left: 2%;
 }
 
 .container tr:nth-child(odd) {
@@ -56,9 +59,11 @@ padding-left:2%;
     background-color: #000000;
 }
 
-.container td:first-child { color: #fdfdfd; }
+.container td:first-child {
+    color: #fdfdfd;
+}
 
 
 .container tr:hover {
- background-color: #769fff;
+    background-color: #769fff;
 }
