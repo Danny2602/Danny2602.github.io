@@ -5,11 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(54, 52, 52, 0.664),
-      rgba(57, 53, 53, 0.685)), url("imagenes/font3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #051f56e6;
   font-family: 'Cabin Condensed', sans-serif;
   flex-direction: column;
   text-align: center;
@@ -20,8 +16,12 @@ body {
 
 /*Color de la barra de navegacion*/
 .barra {
-  background-color: rgba(230, 192, 192, 0.388);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 10, 129, 1) 21%, rgba(1, 27, 231, 1) 35%, rgba(2, 162, 222, 1) 57%, rgba(0, 212, 255, 1) 82%, rgba(9, 78, 121, 1) 100%);
   padding-top: 10px;
+  border-radius: 40px;
+  align-items: center;
+  display: flex;
+  text-align: right;
 }
 
 /*Letras de la barra de navegacion*/
@@ -72,6 +72,11 @@ ul:hover a:hover {
   color: #137c99;
   box-shadow: 0 2px 0 0 currentColor;
 }
+
+
+
+
+
 
 /* Movimiento de entrada */
 *

@@ -5,11 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(54, 52, 52, 0.664),
-      rgba(57, 53, 53, 0.685)), url("imagenes/font3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #051f56e6;
   font-family: 'Cabin Condensed', sans-serif;
   flex-direction: column;
   text-align: center;
