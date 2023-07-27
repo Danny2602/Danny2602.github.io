@@ -40,10 +40,25 @@ body {
   }
 }
 
-/*Color de la barra de navegacion*/
 .barra {
-  margin-top: 80px;
+  margin-top: 70px;
+  padding: 3px;
+  justify-content: end;
+  z-index: 9999;
+  top: 1px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 10, 129, 1) 21%, rgba(1, 27, 231, 1) 35%, rgba(2, 162, 222, 1) 57%, rgba(0, 212, 255, 1) 82%, rgba(9, 78, 121, 1) 100%);
+  border-radius: 40px;
+  align-items: center;
+  display: flex;
+  text-align: right;
+}
 
+
+/*Separacion de las letras de la barra de navegacion*/
+.barra ul li {
+  padding:20px;
+  border-bottom: 2px solid transparent;
+  color: rgb(255, 255, 255);
 }
 
 a {
@@ -57,18 +72,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: center;
+
   display: flex;
 }
 
-ul li {
-  padding: 30px;
 
-}
-
-ul:hover a {
-  color: rgb(255, 255, 255);
-}
 
 li :hover {
   border: 3px solid rgba(109, 202, 202, 0.695);
@@ -80,6 +88,7 @@ ul:hover a:hover {
   color: #137c99;
   box-shadow: 0 2px 0 0 currentColor;
 }
+
 
 .Sub {
   color: aquamarine;
