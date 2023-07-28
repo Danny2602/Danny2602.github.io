@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylenuevacita.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/agregar-cita" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Agregar una nueva cita</legend>
+          <p>
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required>
+          </p>
+          <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </p>
+          <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </p>
+          <p>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecciona una opción</option>
+              <option value="pendiente">Pendiente</option>
+              <option value="confirmada">Confirmada</option>
+              <option value="cancelada">Cancelada</option>
+            </select>
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+        </fieldset>
+      </form>
+</body>
+</html>

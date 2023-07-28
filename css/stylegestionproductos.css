@@ -187,3 +187,32 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
+
+.mi-boton {
+    display: inline-block;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el contenedor del botón */
+  .boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el enlace dentro del botón */
+  .mi-boton a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Cambiar el color del botón cuando se pasa el mouse sobre él */
+  .mi-boton:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+  }
