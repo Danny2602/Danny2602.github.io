@@ -155,8 +155,8 @@ section {
 
 .card {
     position: relative;
-    width: 47vh;
-    height: 65vh;
+    width: 30%;
+    height: 65%;
     background: #000;
     border-radius: 18px;
     overflow: hidden;

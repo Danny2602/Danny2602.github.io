@@ -152,7 +152,7 @@ h1 {
 }
 
 img {
-  width: 100%;
+  width: 300PX;
   justify-content: center;
   margin-bottom: 30px;
 }
@@ -172,7 +172,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-left: 30px;
+  padding: 30px;
 }
 
 .card2 p {
